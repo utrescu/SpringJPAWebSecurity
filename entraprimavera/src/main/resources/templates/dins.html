@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8"/>
+<title>Has entrat</title>
+</head>
+<body>
+<h1 th:text="${'Hola ' + username}">Hola!</h1>
+<p>Benvingut a la pàgina que només poden veure els usuaris registrats</p>
+<p></p>
+<p>No hi ha res, però mola ser l'únic que ho pot veure. Això és poder... </p>
+<p></p>
+<p>No?</p>
+<a th:href="@{/logout}">Sortir</a>-------<a th:href="@{/}">index</a>
+</body>
+</html>

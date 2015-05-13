@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8" />
+<title>Insert title here</title>
+</head>
+<body>
+<form method="post" action="/login">
+<fieldset>
+<legend>Identifica't</legend>
+<input type="hidden" th:name="${_csrf.parameterName}" th:value="${_csrf.token}" />
+<label for="usuari">Usuari <input type="text" name="username" placeholder="usuari"/></label>
+<br/>
+<label for="contra">Contrasenya<input type="password" name="password" placeholder="contrasenya"/></label>
+<br/>
+<input type="submit" value="Entrar"/>
+</fieldset>
+</form>
+</body>
+</html>
