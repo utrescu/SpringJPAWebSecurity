@@ -10,6 +10,18 @@ import org.springframework.security.core.userdetails.UserDetailsService;
 import org.springframework.security.core.userdetails.UsernameNotFoundException;
 import org.springframework.stereotype.Service;
 
+/**
+ * Servei de localització d'Usuaris personalitzats. 
+ * 
+ * Implementa 'UserDetailsService' que és el que fa servir
+ * Spring per autenticar.
+ * 
+ * S'ha d'implementar loadUserByUsername() que ha de retornar
+ * un objecte UserDetails
+ * 
+ * @author xavier
+ *
+ */
 @Service
 public class UsuarisService  implements UserDetailsService {
 

@@ -14,6 +14,13 @@ import org.springframework.security.core.userdetails.UsernameNotFoundException;
 import org.springframework.stereotype.Component;
 import org.springframework.util.StringUtils;
 
+/**
+ * Proveïdor d'autenticació basat en MySQL. Com que 
+ * és personalitzat caldrà estendre de AbstractUserDetailsAuthenticationProvider
+ * 
+ * @author Xavier Sala
+ *
+ */
 @Component
 public class MySQLAuthenticationProvider
            extends AbstractUserDetailsAuthenticationProvider {

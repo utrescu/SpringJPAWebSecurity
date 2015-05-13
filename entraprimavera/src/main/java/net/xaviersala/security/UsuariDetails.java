@@ -8,7 +8,22 @@ import net.xaviersala.model.Usuari;
 import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.core.authority.SimpleGrantedAuthority;
 import org.springframework.security.core.userdetails.UserDetails;
-
+/**
+ * UserDetails és l'objecte que fa servir Spring
+ * per identificar els usuaris. Com que normalment
+ * no serà el que voldrem es pot estendre o bé
+ * convertir l'objecte que interessa en UserDetails.
+ * 
+ * En aquest cas es convertiran els objectes User en
+ * UserDetails. Per això caldrà emplenar els camps
+ * necessaris.
+ * 
+ * En aquest cas es defineixen dos tipus d'usuaris, 
+ * els ADMIN i els USER
+ * 
+ * @author Xavier Sala
+ *
+ */
 public class UsuariDetails implements UserDetails {
   
   /**

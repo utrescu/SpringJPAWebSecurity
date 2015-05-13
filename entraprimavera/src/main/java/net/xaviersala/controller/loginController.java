@@ -11,7 +11,10 @@ import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
 
 /**
- * @author xavier
+ * Controlador web que captura les peticions que arriben a diferents
+ * URL per fer les tasques.
+ * 
+ * @author Xavier Sala
  *
  */
 @Controller

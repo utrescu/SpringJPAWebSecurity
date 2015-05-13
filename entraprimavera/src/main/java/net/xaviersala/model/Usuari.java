@@ -9,6 +9,16 @@ import javax.validation.constraints.NotNull;
 
 import org.hibernate.validator.constraints.NotEmpty;
 
+/**
+ * Entitat bàsica que emmagatzema l'usuari.
+ * 
+ * Defineix dos tipus d'usuaris: 
+ *  - 0: USUARI
+ *  - 1: ADMIN
+ *  
+ * @author Xavier Sala
+ *
+ */
 @Entity
 public class Usuari {
 
